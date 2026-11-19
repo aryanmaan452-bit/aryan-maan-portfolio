@@ -45,6 +45,7 @@ function App() {
   const root = useRef<HTMLDivElement>(null)
   const menu = useRef<HTMLButtonElement>(null)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [showIntro] = useState(() => !window.location.hash || window.location.hash === '#home')
 
   useEffect(() => {
     let disposed = false
@@ -58,7 +59,17 @@ function App() {
   }, [])
 
   return (
-    <div ref={root}>
+    <div ref={root} className="site">
+      {showIntro && (
+        <div className="name-intro" aria-hidden="true">
+          <div className="name-intro-content">
+            <Asterisk size={30} strokeWidth={1.5} />
+            <div className="name-intro-mask">
+              <span>Aryan <em>Maan</em></span>
+            </div>
+          </div>
+        </div>
+      )}
       <a className="skip" href="#main">Skip to content</a>
       <header className="site-header">
         <div className="shell header-row flex items-center justify-between"
