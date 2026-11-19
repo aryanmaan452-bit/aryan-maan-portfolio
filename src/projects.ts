@@ -9,7 +9,7 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  { id: 'thinkpoint', title: 'ThinkPoint', category: 'Research & analysis', summary: 'A website for research and analysis.', artwork: 'thinkpoint' },
-  { id: 'chatbot', title: 'ChatBot.io', category: 'Artificial intelligence', summary: 'An AI chatbot project.', artwork: 'chatbot' },
+  { id: 'vednav', title: 'VEDNAV', category: 'E-commerce design', summary: 'A skincare storefront concept with product browsing and a light and dark theme.', artwork: 'thinkpoint', url: 'https://github.com/aryanmaan452-bit/VEDNAV' },
+  { id: 'redline', title: 'REDLINE', category: 'Entertainment web design', summary: 'A streaming website concept with movie and TV show sections.', artwork: 'chatbot', url: 'https://github.com/aryanmaan452-bit/My-website-' },
   { id: 'creative-experiments', title: 'Pluto', category: 'Creative experiment', summary: 'A webpage experiment.', artwork: 'experiments', url: 'https://github.com/aryanmaan452-bit/pluto-website' },
 ]
